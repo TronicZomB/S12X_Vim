@@ -29,19 +29,19 @@ syn match sxNumber '\<\d\+[T]\>'
 
 "binary numbers
 syn match sxNumber '\<[01]\+\>'
-syn match sxNumber '[%][01]\+'
-syn match sxNumber '[01]\+[Q]'
+syn match sxNumber '[%]\<[01]\+\>'
+syn match sxNumber '\<[01]\+[Q]\>'
 
 "hex numbers
 syn match sxNumber '\<\x\+\>'
-syn match sxNumber '[$]\x\+'
-syn match sxNumber '\x\+[H]'
+syn match sxNumber '[$]\<\x\+\>'
+syn match sxNumber '\<\x\+[H]\>'
 
 "operators
 "syn match sxOperator '[{}*\/+-><%&|^()]'
 
 "immediate values
-syn match sxImmediate '[#][!$%]\?\w\+'
+syn match sxImmediate '[#][!$%]\?[^, ]\+'
 
 "pemicro assembler/compiler/precompiler indicators
 syn match sxPEMicro '[#$%]\(EJECT\|HEADER\|NOLIST\|LIST\|SUBHEADER\|PAGELENGTH\|PAGEWIDTH\|PAGE\|IF\|ELIF\|ELSE\|ENDIF\|INCLUDE\|BASE\|CYCLE_ADDR_ON\|CYCLE_ADDR_OFF\|HC12\|HCS12\|IFNOT\|MACRO\|MACROEND\|PAGE_CHECK\|SET\|SETNOT\)'
