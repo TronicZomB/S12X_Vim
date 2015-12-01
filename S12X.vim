@@ -41,7 +41,7 @@ syn match sxNumber '\<\x\+[H]\>'
 "syn match sxOperator '[{}*\/+-><%&|^()]'
 
 "immediate values
-syn match sxImmediate '[#][!$%]\?[^, ]\+'
+syn match sxImmediate '[#][!$%]\?[^;, ]\+'
 
 "pemicro assembler/compiler/precompiler indicators
 syn match sxPEMicro '[#$%]\(EJECT\|HEADER\|NOLIST\|LIST\|SUBHEADER\|PAGELENGTH\|PAGEWIDTH\|PAGE\|IF\|ELIF\|ELSE\|ENDIF\|INCLUDE\|BASE\|CYCLE_ADDR_ON\|CYCLE_ADDR_OFF\|HC12\|HCS12\|IFNOT\|MACRO\|MACROEND\|PAGE_CHECK\|SET\|SETNOT\)'
