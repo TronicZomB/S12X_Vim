@@ -44,7 +44,7 @@ syn match sxNumber '\<\x\+[H]\>'
 syn match sxImmediate '[#][!$%]\?[^;, ]\+'
 
 "pemicro assembler/compiler/precompiler indicators
-syn match sxPEMicro '[#$%]\(EJECT\|HEADER\|NOLIST\|LIST\|SUBHEADER\|PAGELENGTH\|PAGEWIDTH\|PAGE\|IF\|ELIF\|ELSE\|ENDIF\|INCLUDE\|BASE\|CYCLE_ADDR_ON\|CYCLE_ADDR_OFF\|HC12\|HCS12\|HCS12X\|IFNOT\|MACROEND\|MACRO\|PAGE_CHECK\|SET\|SETNOT\)'
+syn match sxPEMicro '[#$%]\(EJECT\|HEADER\|NOLIST\|LIST\|SUBHEADER\|PAGELENGTH\|PAGEWIDTH\|PAGE\|IF\|ELIF\|ELSE\|ENDIF\|INCLUDE\|BASE\|CYCLE_ADDR_ON\|CYCLE_ADDR_OFF\|HCS12X\|HCS12\|HC12\|IFNOT\|MACROEND\|MACRO\|PAGE_CHECK\|SET\|SETNOT\)'
 syn match sxPEMicro '\(ALIGN.W\|ALIGN.L\)'
 
 "comments and comment keywords
